@@ -6,7 +6,7 @@
 /*   By: matde-je <matde-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 21:19:54 by matde-je          #+#    #+#             */
-/*   Updated: 2022/11/08 00:16:14 by matde-je         ###   ########.fr       */
+/*   Updated: 2022/11/10 16:15:20 by matde-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,17 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	if (s && fd)
-		write(fd, s, ft_strlen(s));
+	int	i;
+
+	if (s != NULL)
+	{
+		i = 0;
+		while (s[i])
+		{
+			ft_putchar_fd(s[i], fd);
+			i++;
+		}
+	}
 }
 
 /*int main()

@@ -6,7 +6,7 @@
 /*   By: matde-je <matde-je@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 17:04:12 by matde-je          #+#    #+#             */
-/*   Updated: 2022/11/10 01:21:41 by matde-je         ###   ########.fr       */
+/*   Updated: 2022/11/10 17:29:53 by matde-je         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (!new)
-		return ;
-	if (!lst)
 		return ;
 	new->next = *lst;
 	*lst = new;
@@ -36,7 +34,7 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 
 // int main()
 // {
-// 	t_list *s1, *s2, *s3;
+// 	t_list *s1, *s2, *s3, *s4;
 // 	t_list **lst;
 
 // 	s1 = ft_lstnew("ola");
@@ -46,6 +44,10 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 // 	s3 = malloc(sizeof(t_list));
 // 	s3->content = "ate";
 // 	s3->next = NULL;
+// 	s4 = ft_lstnew("good");
+// 	s4->next = *lst;
+// 	*lst = s4;
+// 	printf("%p", (void *)lst);
 // 	ft_lstadd_front(lst, s1);
-// 	printf("ola %p", (void *)&s1->content);
+// 	printf("%p", (void *)lst);
 // }

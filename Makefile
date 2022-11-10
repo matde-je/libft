@@ -6,7 +6,7 @@
 #    By: matde-je <matde-je@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/26 14:50:52 by matde-je          #+#    #+#              #
-#    Updated: 2022/11/10 01:26:39 by matde-je         ###   ########.fr        #
+#    Updated: 2022/11/10 22:54:35 by matde-je         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,10 +72,9 @@ BONUS	=	ft_lstnew.c			\
 			ft_lstadd_back.c	\
 			ft_lstlast.c		\
 			ft_lstsize.c		\
-# 			ft_lstclear.c		\
-# 			ft_lstdelone.c		\
-# 			ft_lstmap.c			\
-# 			ft_lstiter.c		\
+			ft_lstclear.c		\
+			ft_lstdelone.c		\
+			ft_lstiter.c		\
 			
 NAME 	=	libft.a
 OBJECTS	=	$(SOURCES:.c=.o)

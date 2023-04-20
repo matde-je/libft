@@ -10,9 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/* if checa so 1 sinal, depois c++ e */
-// se tiver outro sinal retorna so. nao é while logo nao checa mais sinais
-/*comoda0setiver2oumaismenos*/
 int	ft_atoi(const char *str)
 {
 	int	c;
